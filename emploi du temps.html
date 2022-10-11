@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXO HTML Tableau - Emploi du temps</title>
+    <style>
+        html {
+            overflow: scroll;
+        }
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align:right;
+        }
+        th, tr, td {
+            border: 1px solid black;
+        }
+        th, td {
+            width: 50px;
+        }
+        .matin, .apresMidi, .colVide {
+            background: linear-gradient(lightgrey, white);
+        }
+    
+    </style>
+</head>
+
+<body>
+    <main>
+        <table>
+            <thead>
+                <th class="colVide"></th>
+                <th colspan="4" class="matin">Matin</th>
+                <th colspan="4" class="apresMidi">Après-midi</th>
+            </thead>
+            <tbody>
+                <tr style="font-weight:bold;">
+                    <th>Jours / Heures</th>
+                    <th>08-09</th>
+                    <th>09-10</th>
+                    <th>10-11</th>
+                    <th>11-12</th>
+                    <th>14-15</th>
+                    <th>15-16</th>
+                    <th>16-17</th>
+                    <th>17-18</th>
+                </tr>
+                <tr>
+                    <th>Lundi</th>
+                    <td colspan="4">Analyse des données</td>
+                    <td colspan="2">Théories des graphes</td>
+                    <td>***</td>
+                    <td>***</td>
+                </tr>
+                <tr>
+                    <th>Mardi</th>
+                    <td>***</td>
+                    <td>***</td>
+                    <td colspan="2">Théories des graphes</td>
+                    <td colspan="2">TP Informatique</td>
+                    <td>***</td>
+                    <td>***</td>
+                </tr>
+                <tr>
+                    <th>Mercredi</th>
+                    <td colspan="2">Programmation Web</td>
+                    <td>***</td>
+                    <td>***</td>
+                    <td colspan="2">TP Programmation Web</td>
+                    <td colspan="2">TD Théories des graphes</td>
+                </tr>
+                <tr>
+                    <th>Jeudi</th>
+                    <td>***</td>
+                    <td>***</td>
+                    <td colspan="2">TP Programmation Web</td>
+                    <td colspan="4">TD des Séries</td>
+                </tr>
+                <tr>
+                    <th>Vendredi</th>
+                    <td colspan="2">Structure des données</td>
+                    <td colspan="2">TD d'analyse des données</td>
+                    <td>***</td>
+                    <td>***</td>
+                    <td>***</td>
+                    <td>*** </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Samedi</th>
+                    <td colspan="2">Cours LC</td>
+                    <td colspan="2">TD de LC</td>
+                    <td>***</td>
+                    <td>***</td>
+                    <td>***</td>
+                    <td>***</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+
+</html>
